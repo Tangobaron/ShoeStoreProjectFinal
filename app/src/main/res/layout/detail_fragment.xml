@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ShoeDetailFragment">
+
+        <data>
+
+            <variable
+                name="shoe"
+                type="com.raphaelbaron.shoestoreproject.Shoe" />
+        </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/margin_20dp"
+                    android:paddingTop="@dimen/margin_10dp"
+                    android:paddingEnd="@dimen/margin_20dp"
+                    android:text="@string/shoe_label" />
+
+                <EditText
+                    android:id="@+id/shoeDetailsLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:hint="@string/enter_shoe_label"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences"
+                    android:text="@{shoe.label}" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/margin_20dp"
+                    android:paddingTop="@dimen/margin_10dp"
+                    android:paddingEnd="@dimen/margin_20dp"
+                    android:text="@string/Shoe_Name" />
+
+                <EditText
+                    android:id="@+id/shoeDetailsName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:hint="@string/enter_shoe_name"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences"
+                    android:paddingTop="@dimen/margin_10dp"
+                    android:text="@{shoe.name}" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/margin_20dp"
+                    android:paddingTop="@dimen/margin_10dp"
+                    android:paddingEnd="@dimen/margin_20dp"
+                    android:text="@string/company" />
+
+                <EditText
+                    android:id="@+id/shoeDetailsCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:hint="@string/enter_shoe_company"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences"
+                    android:paddingTop="@dimen/margin_10dp"
+                    android:text="@{shoe.company}" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/margin_20dp"
+                    android:paddingTop="@dimen/margin_10dp"
+                    android:paddingEnd="@dimen/margin_20dp"
+                    android:text="@string/shoe_size" />
+
+                <EditText
+                    android:id="@+id/shoeDetailsSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:hint="@string/enter_shoe_size"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:paddingTop="@dimen/margin_10dp"
+                    android:text="@{shoe.size}" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/margin_20dp"
+                    android:paddingTop="@dimen/margin_10dp"
+                    android:paddingEnd="@dimen/margin_20dp"
+                    android:text="@string/description" />
+
+                <EditText
+                    android:id="@+id/shoeDetailsDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:hint="@string/enter_description"
+                    android:importantForAutofill="no"
+                    android:inputType="textAutoCorrect|textMultiLine"
+                    android:paddingTop="@dimen/margin_10dp"
+                    android:text="@{shoe.description}" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/saveShoeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:background="@drawable/corner"
+                        android:text="@string/save" />
+
+                    <Button
+                        android:id="@+id/cancelShoeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:background="@drawable/corner"
+                        android:text="@string/cancel" />
+
+                </LinearLayout>
+    </LinearLayout>
+</layout>

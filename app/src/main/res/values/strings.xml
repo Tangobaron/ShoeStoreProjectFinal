@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Tango Shoes Online</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_sign_up_short"><u>Sign up</u></string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="no_account_yet">Don\'t have an account yet?</string>
+    <string name="app_login_title">The Tango Shoe Store</string>
+    <string name="line_tango_shoes">line tango shoes</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="bienvenido">Bienvenido!</string>
+    <string name="welcome_page_text">Press the "Continue" button to read the instructions</string>
+    <string name="please_read_instructions">Please read the following instructions</string>
+    <string name="press_the_button_to_proceed">Press the button to proceed</string>
+    <string name="continue_button">Continue</string>
+    <string name="floating_action_button">Floating Action Button</string>
+    <string name="tango_shoes_store">Tango Shoes Store</string>
+    <string name="log_out">Log Out</string>
+    <string name="shoe_label">Label</string>
+    <string name="enter_shoe_label">Enter Shoe Label</string>
+    <string name="Shoe_Name">Name</string>
+    <string name="enter_shoe_name">Enter Shoe Name</string>
+    <string name="company">Company</string>
+    <string name="enter_shoe_company">Enter Shoe Company</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="enter_shoe_size">Enter Shoe Size</string>
+    <string name="save">Save</string>
+    <string name="description">Description</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="label_format">Label : %s</string>
+    <string name="name_format">Name : %s</string>
+    <string name="company_format">Company : %s</string>
+    <string name="size_format">Size : %s</string>
+    <string name="description_format">Description : %s</string>
+    <string name="how_to_add_shoes">How to add Shoes</string>
+    <string name="instructions">Press the <b>Plus</b> button at the bottom right \n Fill the form and press <b>Save</b></string>
+    <string name="fab_description">Floating action button to add shoes</string>
+</resources>
