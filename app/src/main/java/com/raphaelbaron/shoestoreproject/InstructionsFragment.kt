@@ -9,11 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.raphaelbaron.shoestoreproject.databinding.InstructionsFragmentBinding
 
-/**
- * A simple [Fragment] subclass.
- * Use the [InstructionsFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class InstructionsFragment : Fragment() {
 
     override fun onCreateView(

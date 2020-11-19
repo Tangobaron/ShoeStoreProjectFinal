@@ -1,9 +1,12 @@
+@file:Suppress("KDocUnresolvedReference")
+
 package com.raphaelbaron.shoestoreproject.shoeInventory
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -12,11 +15,6 @@ import com.raphaelbaron.shoestoreproject.R
 import com.raphaelbaron.shoestoreproject.Shoe
 import com.raphaelbaron.shoestoreproject.databinding.DetailFragmentBinding
 
-/**
- * A simple [Fragment] subclass.
- * Use the [DetailFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class DetailFragment : Fragment() {
 
     override fun onCreateView(
@@ -35,12 +33,12 @@ class DetailFragment : Fragment() {
                 ViewModelProvider(requireActivity()).get(InventoryViewModel::class.java)
             val shoe = binding.shoe!!
 
-//            if (shoe.label.isEmpty() || shoe.name.isEmpty() || shoe.company.isEmpty() || shoe.size.isEmpty() || shoe.description.isEmpty()) {
-//                Toast.makeText(activity, "Fields cannot be empty ", Toast.LENGTH_SHORT).show()
-//            } else {
+            if (shoe.label.isEmpty() || shoe.name.isEmpty() || shoe.company.isEmpty() || shoe.size.isEmpty() || shoe.description.isEmpty()) {
+                Toast.makeText(activity, "Fields cannot be empty ", Toast.LENGTH_SHORT).show()
+            } else {
                 viewModel.addShoesToInventory(binding.shoe!!)
                 shoeDetailNavigation(it)
-//            }
+            }
         }
         return binding.root
     }

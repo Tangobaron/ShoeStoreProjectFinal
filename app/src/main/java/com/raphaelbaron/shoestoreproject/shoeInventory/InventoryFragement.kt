@@ -13,11 +13,6 @@ import com.raphaelbaron.shoestoreproject.R
 import com.raphaelbaron.shoestoreproject.Shoe
 import com.raphaelbaron.shoestoreproject.databinding.InventoryFragmentBinding
 
-/**
- * A simple [Fragment] subclass.
- * Use the [InventoryFragement.newInstance] factory method to
- * create an instance of this fragment.
- */
 class InventoryFragement : Fragment() {
 
     private lateinit var viewModel: InventoryViewModel
