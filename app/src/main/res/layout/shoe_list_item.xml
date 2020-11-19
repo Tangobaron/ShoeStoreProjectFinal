@@ -1,67 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/shoeDetailsInflated"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="@dimen/margin_20dp"
-    android:layout_marginTop="@dimen/margin_20dp"
-    android:layout_marginEnd="@dimen/margin_20dp"
-    android:orientation="vertical"
-    android:background="@drawable/corner">
+    <!--LinearLayout chosen due to the simplicity of the the layout required-->
 
-    <TextView
-        android:id="@+id/shoeDetailsLabel"
+    <LinearLayout
+        android:id="@+id/shoeDetailsInflated"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_20dp"
-        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_20dp"
         android:layout_marginEnd="@dimen/margin_20dp"
-        tools:text="@string/shoe_label" />
+        android:background="@drawable/corner"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/shoeDetailsName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_20dp"
-        android:layout_marginTop="@dimen/margin_10dp"
-        android:layout_marginEnd="@dimen/margin_20dp"
-        android:textStyle="bold"
-        tools:text="@string/Shoe_Name" />
+        <TextView
+            android:id="@+id/shoeDetailsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            tools:text="@string/shoe_label" />
 
-    <TextView
-        android:id="@+id/shoeDetailsCompany"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_20dp"
-        android:layout_marginTop="@dimen/margin_10dp"
-        android:layout_marginEnd="@dimen/margin_20dp"
-        tools:text="@string/company" />
+        <TextView
+            android:id="@+id/shoeDetailsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            android:textStyle="bold"
+            tools:text="@string/Shoe_Name" />
 
-    <TextView
-        android:id="@+id/shoeDetailsSize"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_20dp"
-        android:layout_marginTop="@dimen/margin_10dp"
-        android:layout_marginEnd="@dimen/margin_20dp"
-        tools:text="@string/shoe_size" />
+        <TextView
+            android:id="@+id/shoeDetailsCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            tools:text="@string/company" />
 
-    <TextView
-        android:id="@+id/shoeDetailsDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_20dp"
-        android:layout_marginTop="@dimen/margin_10dp"
-        android:layout_marginEnd="@dimen/margin_20dp"
-        android:layout_marginBottom="@dimen/margin_10dp"
-        tools:text="@string/description" />
+        <TextView
+            android:id="@+id/shoeDetailsSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            tools:text="@string/shoe_size" />
+
+        <TextView
+            android:id="@+id/shoeDetailsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            tools:text="@string/description" />
 
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="@dimen/margin_10dp"
-        android:background="#C8C7C8" />
-</LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="#C8C7C8" />
+    </LinearLayout>
+</layout>

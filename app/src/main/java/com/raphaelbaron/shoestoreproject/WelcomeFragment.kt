@@ -11,10 +11,10 @@ import com.raphaelbaron.shoestoreproject.databinding.WelcomeFragmentBinding
 
 /**
  * A simple [Fragment] subclass.
- * Use the [WelcomeF.newInstance] factory method to
+ * Use the [WelcomeFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class WelcomeF : Fragment() {
+class WelcomeFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,7 +23,7 @@ class WelcomeF : Fragment() {
         val binding: WelcomeFragmentBinding =
             DataBindingUtil.inflate(inflater, R.layout.welcome_fragment, container, false)
 
-        binding.continueToInstructionsButton.setOnClickListener { findNavController().navigate(WelcomeFDirections.actionWelcomeFToInstructionsFragment()) }
+        binding.continueToInstructionsButton.setOnClickListener { findNavController().navigate(WelcomeFragmentDirections.actionWelcomeToInstructions()) }
 
         return binding.root
     }

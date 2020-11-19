@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -15,10 +14,10 @@ import com.raphaelbaron.shoestoreproject.databinding.DetailFragmentBinding
 
 /**
  * A simple [Fragment] subclass.
- * Use the [DetailF.newInstance] factory method to
+ * Use the [DetailFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class DetailF : Fragment() {
+class DetailFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -47,6 +46,6 @@ class DetailF : Fragment() {
     }
 
     private fun shoeDetailNavigation(view: View) {
-        view.findNavController().navigate(DetailFDirections.actionDetailFToInventoryF())
+        view.findNavController().navigate(DetailFragmentDirections.actionDetailToInventory())
     }
 }

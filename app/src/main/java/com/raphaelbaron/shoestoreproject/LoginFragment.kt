@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.raphaelbaron.shoestoreproject.databinding.LoginFragmentBinding
 
-class LoginF : Fragment() {
+class LoginFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,6 +25,6 @@ class LoginF : Fragment() {
     }
 
     private fun welcomeNavigation(view: View) {
-        view.findNavController().navigate(LoginFDirections.actionLoginFToWelcomeF())
+        view.findNavController().navigate(LoginFragmentDirections.actionLoginToWelcome())
     }
 }

@@ -25,7 +25,7 @@ class InstructionsFragment : Fragment() {
 
         binding.continueToInventoryButton.setOnClickListener {
             findNavController().navigate(
-                InstructionsFragmentDirections.actionInstructionsFToInventoryF()
+                InstructionsFragmentDirections.actionInstructionsToInventory()
             )
         }
 

@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/loginF"
-        android:name="com.raphaelbaron.shoestoreproject.LoginF"
+        android:name="com.raphaelbaron.shoestoreproject.LoginFragment"
         android:label="Login"
         tools:layout="@layout/login_fragment" >
         <action
-            android:id="@+id/action_loginF_to_welcomeF"
+            android:id="@+id/action_login_to_welcome"
             app:destination="@id/welcomeF"
             app:enterAnim="@anim/fragment_fade_enter"
             app:exitAnim="@anim/fragment_fade_exit" />
     </fragment>
     <fragment
         android:id="@+id/welcomeF"
-        android:name="com.raphaelbaron.shoestoreproject.WelcomeF"
+        android:name="com.raphaelbaron.shoestoreproject.WelcomeFragment"
         android:label="Welcome"
         tools:layout="@layout/welcome_fragment" >
         <action
-            android:id="@+id/action_welcomeF_to_instructionsFragment"
+            android:id="@+id/action_welcome_to_instructions"
             app:destination="@id/instructionsF" />
     </fragment>
     <fragment
@@ -31,26 +31,26 @@
         android:label="Instructions"
         tools:layout="@layout/instructions_fragment" >
         <action
-            android:id="@+id/action_instructionsF_to_inventoryF"
+            android:id="@+id/action_instructions_to_inventory"
             app:destination="@id/inventoryF"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/inventoryF"
-        android:name="com.raphaelbaron.shoestoreproject.shoeInventory.InventoryF"
+        android:name="com.raphaelbaron.shoestoreproject.shoeInventory.InventoryFragement"
         android:label="Shoe Inventory"
         tools:layout="@layout/inventory_fragment" >
         <action
-            android:id="@+id/action_inventoryF_to_detailF"
+            android:id="@+id/action_inventory_to_detail"
             app:destination="@id/detailF" />
     </fragment>
     <fragment
         android:id="@+id/detailF"
-        android:name="com.raphaelbaron.shoestoreproject.shoeInventory.DetailF"
+        android:name="com.raphaelbaron.shoestoreproject.shoeInventory.DetailFragment"
         android:label="Shoe Details Page"
         tools:layout="@layout/detail_fragment" >
         <action
-            android:id="@+id/action_detailF_to_inventoryF"
+            android:id="@+id/action_detail_to_inventory"
             app:destination="@id/inventoryF"
             app:popUpToInclusive="true" />
     </fragment>

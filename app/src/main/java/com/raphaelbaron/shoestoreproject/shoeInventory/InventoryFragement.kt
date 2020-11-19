@@ -15,10 +15,10 @@ import com.raphaelbaron.shoestoreproject.databinding.InventoryFragmentBinding
 
 /**
  * A simple [Fragment] subclass.
- * Use the [InventoryF.newInstance] factory method to
+ * Use the [InventoryFragement.newInstance] factory method to
  * create an instance of this fragment.
  */
-class InventoryF : Fragment() {
+class InventoryFragement : Fragment() {
 
     private lateinit var viewModel: InventoryViewModel
 
@@ -30,7 +30,7 @@ class InventoryF : Fragment() {
 
         binding.toShoeDetailFAB.setOnClickListener {
             findNavController().navigate(
-                InventoryFDirections.actionInventoryFToDetailF()
+                InventoryFragementDirections.actionInventoryToDetail()
             )
         }
         viewModel = ViewModelProvider(requireActivity()).get(InventoryViewModel::class.java)
