@@ -46,6 +46,8 @@ class InventoryF : Fragment() {
         return binding.root
     }
 
+
+//Used https://github.com/ShubhamSrivastava93/ShoeStore.git version for the following part since I misunderstood the application of DataBinding from an EditText
     private fun addShoeDetailToInventory(inventoryList: View, shoe: Shoe) {
         val shoeListItem =
             LayoutInflater.from(context).inflate(R.layout.shoe_list_item, null, false)
