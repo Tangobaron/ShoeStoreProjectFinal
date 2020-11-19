@@ -36,11 +36,11 @@
     <string name="description">Description</string>
     <string name="enter_description">Enter Description</string>
     <string name="cancel">Cancel</string>
-    <string name="label_format">Label : %s</string>
-    <string name="name_format">Name : %s</string>
-    <string name="company_format">Company : %s</string>
-    <string name="size_format">Size : %s</string>
-    <string name="description_format">Description : %s</string>
+    <string name="label_label">Label : </string>
+    <string name="name_label">Name : </string>
+    <string name="company_label">Company : </string>
+    <string name="size_label">Size : </string>
+    <string name="description_label">Description : </string>
     <string name="how_to_add_shoes">How to add Shoes</string>
     <string name="instructions">Press the <b>Plus</b> button at the bottom right \n Fill the form and press <b>Save</b></string>
     <string name="fab_description">Floating action button to add shoes</string>

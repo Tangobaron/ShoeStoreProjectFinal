@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/inventoryFragement"
-        android:name="com.raphaelbaron.shoestoreproject.shoeInventory.InventoryFragement"
+        android:name="com.raphaelbaron.shoestoreproject.shoeInventory.InventoryFragment"
         android:label="Shoe Inventory"
         tools:layout="@layout/inventory_fragment">
         <action
